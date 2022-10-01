@@ -1,0 +1,31 @@
+@import 'variables.less';
+@import 'mixins.less';
+.pad-mar{
+    padding-left:1rem;
+    padding-right:1rem;
+    margin-left:1rem;
+    @media @x-large{
+        padding-left:3rem;
+        padding-right:3rem;
+        margin-left:3rem;
+    }
+}
+.pad-left{
+    padding-left:1rem;
+    @media @x-large{
+        padding-left:3rem;
+    }
+}
+.padding-x {
+    padding:auto 15px;
+    font-size:15px;
+    @media (min-width:1370px){
+        font-size:16px;
+    }
+}
+.header-on-red{
+    color:#fff;
+    strong{
+        color:#e30613;
+    }
+}

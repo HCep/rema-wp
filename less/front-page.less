@@ -1,0 +1,141 @@
+@import 'variables.less';
+@import 'mixins.less';
+
+.front-img-contact{
+    .wp-block-image{
+        margin:0px!important;
+    }
+}
+.right-front-cnt{
+    position: relative;
+   
+    right: 0px;
+
+
+    .opacity-8{
+        opacity:.8;
+        padding-left:1rem;
+        padding-right:1rem;
+        @media @x-large{
+            padding-left:3rem;
+            padding-right:3rem;
+        }
+    }
+    
+    @media @x-large{
+        position: absolute;
+        width: 40%;
+        right: 40px;
+     
+        
+    }
+
+}
+.right-image{
+    position:relative;
+    top:60px;
+    left: -24%;
+    z-index:9;
+    @media @large{
+        position:absolute;
+        top:-30%;
+        left:10%;
+       
+       
+    }
+    img{
+        max-width:none;
+    width:125%;
+        @media @large{
+            max-width:100%;
+            width:100%;
+        }
+    }
+}
+.right-overlay-white{
+    position:relative;
+    width:100%;
+    top:0px;
+    
+    padding-right:50px;
+    @media @medium{
+        width: 80%;
+        top: 30px;
+    }
+    @media @x-large{
+        width:50%;
+        top:110px;
+    }
+  
+   
+}
+.splide__list{
+    list-style:none;
+}
+.all-project-button-cnt{
+    display:flex;
+    justify-content:center;
+    @media @large{
+        display:block;
+    }
+}
+.about-us-section{
+    margin-top:30px;
+    @media @large{display:flex;}
+    .about-us-first{
+        order: 2;
+        position: relative;
+        right: 180px;
+        transform: scale(0.6);
+        @media @large{
+            order:0;
+            right:0px;
+            transform:scale(1.0);
+        }
+        figure{
+            img{
+             
+                max-width:none;
+                @media @large{
+                    max-width:100%;
+                }
+            }
+        }
+    }
+}
+.wp-block-columns{
+    .wp-block-column{
+        .show-film-cnt
+{
+    .wp-block-column{
+      @media (max-width:599px)
+      {flex-basis:50%!important;}
+    }
+}
+    }
+}
+.button-show-film-justification{
+   @media @large
+   {justify-content:flex-end;}
+}
+.front-first-section{
+    position:relative;
+    top:-30px;
+    z-index:-1;
+}
+.p-0 a{
+    padding:0px!important;
+}
+.header-on-red{
+    font-size: 20px;
+    transform: translate(0px, 10px);
+    white-space: nowrap;
+    @media @x-large{
+        font-size: 25px;
+    }
+}
+.red-overlay{
+    @media (min-width:1600px){
+        width:75%;
+    }
+}

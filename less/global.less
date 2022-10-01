@@ -1,0 +1,145 @@
+@import 'variables.less';
+@import 'mixins.less';
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    scroll-behavior: smooth;
+    
+}
+html, body{
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+body{
+   font-family:'FF Unit Pro' sans-serif;
+    max-width:1920px;
+    margin:0 auto;
+   
+}
+.row{
+    margin-left:0;
+    margin-right:0;
+}
+h1,h2,h3{
+    @media @medium{
+        font-size:48px;
+    }
+    font-size:24px;
+}
+
+.small-images{
+    figure{
+       
+        img{
+            width:fit-content!important;
+            margin-bottom:0px!important;
+        }
+    }
+}
+.image-caption{
+
+        figcaption{
+            width:100%;
+            text-align: left!important;
+            strong{
+                font-size:16px;
+                @media @large{
+                    font-size:30px;
+                }
+            }
+            font-size:13px!important;
+        }
+}
+figure{
+    figcaption{
+        width:100%;
+        background-color:rgba(0,0,0,0.6)!important;
+        text-align: left!important;
+        
+        white-space:nowrap;
+        @media @large{
+            padding:15px 30px!important;
+        }
+        strong{
+            font-size:16px;
+            @media @large{
+                font-size:30px;
+            }
+        }
+        font-size:13px!important;
+    }
+    // &:hover > figcaption > strong{
+    //     font-size:0px!important;
+    // }
+    // &:hover figcaption{
+    //     font-size:0px!important;
+    // }
+}
+.marker-footer-image{
+    .wp-block-media-text .wp-block-media-text__content{
+        padding:0px 0px!important;
+    }
+    figure{
+        img{
+            width:auto!important;
+        }
+    }
+}
+.search-field{
+    border:0px;
+    color:#C1C1C1;
+
+}
+.search-field::placeholder{
+    color:#C1C1C1;
+}
+.border-half-red{
+    position:relative;
+    p{
+        font-size:16px;
+      
+    }
+}
+.border-half-red::after{
+    content:'';
+    position:absolute;
+    display:block;
+    left:0;
+    bottom:-20px;
+    width:30%;
+    height:4px;
+    background-color:@accent-color;
+}
+.sub-text{
+    position:relative;
+    top:-20px;
+}
+.mapouter{
+    max-width:100%!important;
+    width:100%!important;
+    overflow:hidden;
+}
+.caret{
+    display:none;
+}
+.menu-mobile-dropdown-menu-1{
+    display:none!important;
+}
+.collapse:not(.show){
+    display:none!important;
+}
+
+
+// .image-caption{
+//     figcaption{
+//         padding:10px 15px!important; 
+//         transition:.2s;
+//         overflow:hidden;
+//     }
+//     transition:.2s;
+//     &:hover figcaption{
+//         height:0px;
+//         padding:0px 0px!important;
+//            }
+// }
